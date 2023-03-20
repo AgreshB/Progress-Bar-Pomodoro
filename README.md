@@ -24,4 +24,4 @@ Make sure to First install terminal-notifier using:
 ```
 brew install terminal-notifier
 ```
-Then copy '.zshrc' to local machine for pomodoro commands
+Then copy 'zshrc' to local MAC '.zshrc' for pomodoro commands
