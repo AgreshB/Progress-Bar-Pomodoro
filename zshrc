@@ -4,7 +4,7 @@
 
 # Mac setup for pomo
 # to avoid using ./ before Progress build
-export PATH=$PATH:.
+export PATH=$PATH:$(pwd)/Progress
 
 
 alias work="Progress 60m && terminal-notifier -message 'Pomodoro'\
