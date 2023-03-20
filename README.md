@@ -7,14 +7,21 @@ Features :
 
 Functionality similar to sleep , except with a graphic. Aim to create a Pomdoro Timer for studying settings
 
-## Usage
+## Usage and Build
 
+First Build using the following command:
 ```sh
-go run main.go <duration>
-go run main.go -n <name> <duration>
+go build -o Progress
+./Progress <duration>
+./Progress -n <name> <duration>
 ```
+Duration can have the following valid time units : "ns", "us" (or "µs"), "ms", "s", "m", "h".
+Default duration : seconds ("s").
 
-It is possible to pass a time unit for `<duration>`.
+## For Pomodoro Timer on Mac
 
-Valid time units are "ns", "us" (or "µs"), "ms", "s", "m", "h".
-If no unit is passed, it defaults to seconds ("s").
+Make sure to First install terminal-notifier using:
+```
+brew install terminal-notifier
+```
+Then copy '.zshrc' to local machine for pomodoro commands
